@@ -76,7 +76,7 @@ public class VIPManager implements Interfazlab {
 
     @Override
     public String cantidadBoletos(String cantidad) {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'cantidadBoletos'");
     }
 

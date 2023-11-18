@@ -13,6 +13,9 @@ public class Reserva implements Interfazlab {
 
     // Constructor y otros métodos según sea necesario
 
+    public Reserva(String informacionReserva) {
+    }
+
     @Override
     public String fechaViaje(String fecha) {
         this.fechaViaje = fecha;

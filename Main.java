@@ -39,19 +39,25 @@ public class Main {
     }
 
     private static void realizarReserva(Usuario usuario, Scanner scanner) {
-        Reserva reserva = new Reserva();  // Puedes crear un objeto Reserva para demostración
-        // Lógica para realizar reserva...
+       
+        System.out.print("Ingrese la información necesaria para realizar la reserva: ");
+        String informacionReserva = scanner.nextLine();
+        new Reserva(informacionReserva);
+        
         System.out.println("Reserva realizada con éxito.");
     }
 
     private static void confirmarReserva(Usuario usuario, Scanner scanner) {
-        Confirmacion confirmacion = new Confirmacion();  // Puedes crear un objeto Confirmacion para demostración
+        // Puedes modificar esta lógica según las necesidades reales
+        System.out.print("Ingrese la información necesaria para confirmar la reserva: ");
+        String informacionConfirmacion = scanner.nextLine();
+        Confirmacion confirmacion = new Confirmacion(informacionConfirmacion); // Puedes crear un objeto Confirmacion con la información ingresada
         // Lógica para confirmar reserva...
         System.out.println("Reserva confirmada con éxito.");
     }
 
     private static void consultasVIP(Usuario usuario) {
         VIPManager vipManager = new VIPManager();  // Puedes crear un objeto VIPManager para demostración
-        System.out.print(vipManager.consultasVIP());
+        System.out.println(vipManager.consultasVIP());
     }
 }
